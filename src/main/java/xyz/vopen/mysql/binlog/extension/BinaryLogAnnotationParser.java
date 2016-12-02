@@ -16,6 +16,7 @@ import java.util.*;
 /**
  * 实体与日志对应的Table Map解析表
  * Created by ive on 31/10/2016.
+ * @author Elve.xu
  */
 public final class BinaryLogAnnotationParser {
 
