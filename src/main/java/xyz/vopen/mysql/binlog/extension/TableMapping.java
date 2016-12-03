@@ -111,19 +111,6 @@ public class TableMapping extends Mapping {
         return columns.get(index);
     }
 
-
-//    public static void main (String[] args) {
-//        Map<Integer, String> a = new HashMap<>();
-//        a.put(0, "c1");
-//        a.put(1, "c2");
-//        a.put(2, "c3");
-//
-//        Key[] keys = new Key[]{new Key(0, "key1"), new Key(1, "key12")};
-//        TableMapping mapping = TableMapping.newBuilder().destTable("tableName").columns(a).keys(keys).build();
-//        System.out.println(mapping.insertSql());
-//        System.out.println(mapping.updateSql());
-//    }
-
     public String insertSql () {
         StringBuilder sql = new StringBuilder("INSERT INTO ");
         if (columns != null && columns.size() > 0) {
